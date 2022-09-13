@@ -1,6 +1,4 @@
-# Project Name Template
-
-### Project Description
+# Instructions
 
 ##### Authors:
 * William Vann (billthelibrarian)
@@ -9,36 +7,16 @@
 ---
 
 ##### Instructions:
-Create file `config.py` to pass your user name, password, and port number into variables
-This code will not run unless you first configure the following three variables:
-* user = "postgres"
-* password = "<YOUR PostgreSQL Password HERE>"
-* port = "<Your PostgreSQL Port Number HERE>"
----
+1. Create file `config.py` to pass your user name, password, and port number into variables
 
-##### Tools & Supplies:
-* < Database and table description here >
+2. Edit your config variables to your unique usage paramaters
+    * user = "postgres"
+    * password = "<YOUR PostgreSQL Password HERE>"
+    * port = "<Your PostgreSQL Port Number HERE>"
 
-* Python, SQLAlchemy, Pandas, --- < edit or append here as needed>
----
+3. In PostgreSQL create a database named "<db.whatever_name_db>"
 
-### Guide to Repo Contents:
+4. Open Jupyter Notebook file.......  .ipynb
+ 
+    etc
 
-* `sample.file` is < describe contents >
-* `sample.image` is < describe image >
-* In folder, `Resources` are the following 6 tables:
-    1. `sample.sqlite` is < describe contents >
-    2. `sample_data.csv` is < describe contents >
-    3. `more_samples.csv` is < describe contents >
-    
----
-
-### Observations:
-* < List Observations Here >
-
-
----
-
-### Credits and Special Thanks
-
-* 
