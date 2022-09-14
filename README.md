@@ -8,13 +8,36 @@
 * John Torgerson (JohnTorgerson)
 ---
 
-##### Instructions:
-Create file `config.py` to pass your user name, password, and port number into variables
-This code will not run unless you first configure the following three variables:
-* user = "postgres"
-* password = "-Input Your Postgres Password HERE-"
-* port = "-Input Your Postgres Port Number HERE-"
----
+### Instructions:
+
+##### 1. Clone the Repo
+    * From github clone the `Project-2-Group-13` repo
+
+##### 2. Securely store your personal gateway to your tools
+    * Create file `config.py` where you'll pass your user name, password, and port number into variables
+
+##### 3. Pass your info into the provided variables
+    * Edit your config variables to your unique usage paramaters
+
+        user = "postgres"
+        password = "<YOUR PostgreSQL Password HERE>"
+        port = "<Your PostgreSQL Port Number HERE>"
+
+##### 4. Create the library database
+    * In PostgreSQL create a database named "library_db"
+
+##### 5. Create the tables
+    * From your new library_db database in PostgreSQL, open a query and run file `APPLEJACK.sql`
+
+##### 6. Populate the tables
+    * First, populate table textbooks by importing `textbooks.csv`
+    * You must navigate to the Resources folder inside the provded repo you cloned 
+    * Toggle the header button to active
+    * Choose the comma as the delimiter
+    * Repeat the previous four steps exectly, substituing only table courses  and import `courses.csv` in the first bullet point
+
+##### 7. 
+<hr>
 
 ##### Tools and Supplies:
 * csv data tables
@@ -34,15 +57,8 @@ This code will not run unless you first configure the following three variables:
     1. `courses.csv` is the pared down raw data for courses
     2. `textbooks.csv` is the pared down raw data for textbooks
     3. `more_samples.file` is < describe contents >
-    
----
-
-### Observations:
-* < List Observations Here >
-
-
 ---
 
 ### Credits and Special Thanks
 
-* 
+* Dominic Labella for helping clarify how we could effectively apply a junction table to this data
