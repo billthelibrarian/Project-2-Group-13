@@ -12,24 +12,28 @@
 Create file `config.py` to pass your user name, password, and port number into variables
 This code will not run unless you first configure the following three variables:
 * user = "postgres"
-* password = "<YOUR PostgreSQL Password HERE>"
-* port = "<Your PostgreSQL Port Number HERE>"
+* password = "-Input Your Postgres Password HERE-"
+* port = "-Input Your Postgres Port Number HERE-"
 ---
 
-##### Tools & Supplies:
-* < Database and table description here >
-
-* Python, SQLAlchemy, Pandas, --- < edit or append here as needed>
+##### Tools and Supplies:
+* csv data tables
+* Python, Pandas, PostgreSQL  More?
 ---
 
 ### Guide to Repo Contents:
 
-* `sample.file` is < describe contents >
-* `sample.image` is < describe image >
-* In folder, `Resources` are the following 6 tables:
-    1. `sample.sqlite` is < describe contents >
-    2. `sample_data.csv` is < describe contents >
-    3. `more_samples.csv` is < describe contents >
+* `library_cleaning.ipynb` is a jupyter notebook that uses pandas to remove manipulate the dataframes to make the content format universal
+* `Spring2022.ipynb` is a jupyter notebook that uses pandas to remove unnecessary raw data from large csv files
+* `instructions.md` is a read only file directing a user to run this code correctly to acheive the desired end result
+* `REEADME.md` is the read only file you're currently viewing
+* `REEADME.md` is the read only file you're currently viewing
+* `REEADME.md` is the read only file you're currently viewing
+
+* In folder, `Resources` are the following files:
+    1. `courses.csv` is the pared down raw data for courses
+    2. `textbooks.csv` is the pared down raw data for textbooks
+    3. `more_samples.file` is < describe contents >
     
 ---
 
