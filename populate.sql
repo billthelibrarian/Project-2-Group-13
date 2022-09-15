@@ -1,5 +1,3 @@
-drop table courses;
-
 CREATE TABLE courses (
 	university VARCHAR,
 	campus VARCHAR,
@@ -14,5 +12,16 @@ CREATE TABLE courses (
 	section_id VARCHAR
 );
 
-select * from courses;
-
+CREATE TABLE textbooks (
+	campus_id VARCHAR,
+	term_id VARCHAR,
+	department_id VARCHAR,
+	course_id VARCHAR,
+	section_id VARCHAR,
+	title VARCHAR,
+	publisher VARCHAR,
+	book_type VARCHAR,
+	book_id VARCHAR,
+	isbn VARCHAR,
+	price FLOAT
+);
