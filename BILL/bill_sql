@@ -1,0 +1,69 @@
+drop table "courses";
+drop table "textbooks";
+drop table "courses_textbooks";
+
+
+
+
+CREATE TABLE "courses" (
+	"course_serial_id" SERIAL,
+	"university" VARCHAR NOT NULL,
+	"campus" VARCHAR,
+	"campus_id" VARCHAR,
+	"term" VARCHAR,
+	"term_id" VARCHAR,
+	"department" VARCHAR NOT NULL,
+	"department_id" VARCHAR,
+	"course" VARCHAR NOT NULL,
+	"course_id" VARCHAR,
+	"section" VARCHAR NOT NULL,
+	"section_id" VARCHAR,	
+	PRIMARY KEY ("course_serial_id")
+		
+	
+);
+
+
+
+CREATE TABLE "textbooks" (
+	"textbook_id" SERIAL,
+	"campus_id" VARCHAR,
+	"term_id" VARCHAR,
+	"department_id" VARCHAR,
+	"course_id" VARCHAR,
+	"section_id" VARCHAR,
+	"title" VARCHAR NOT NULL,
+	"publisher" VARCHAR,
+	"book_type" VARCHAR NOT NULL,
+	"book_id" VARCHAR,
+	"isbn" VARCHAR,
+	"price" FLOAT NOT NULL,
+	PRIMARY KEY ("textbook_id")
+);
+
+
+CREATE TABLE "courses_textbooks" (	
+	"courses_textbooks_pkey" SERIAL,
+	"course_serial_id" int,
+	"textbook_id" int,
+	PRIMARY KEY ("textbook_id"),
+		FOREIGN KEY("course_serial_id") REFERENCES "courses" ("course_serial_id"),
+		FOREIGN KEY("textbook_id") REFERENCES "textbooks" ("textbook_id")
+	
+);
+
+
+-- INSERT INTO "courses_textbooks" ("course_serial_id")
+-- SELECT  "course_serial_id"      
+-- FROM "courses";
+
+-- INSERT INTO "courses_textbooks" ("textbook_id")
+-- SELECT  "textbook_id"      
+-- FROM "textbooks";
+
+
+select * from "courses";
+
+select * from "textbooks";
+
+select * from "courses_textbooks";
