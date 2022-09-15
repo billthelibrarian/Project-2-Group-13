@@ -1,4 +1,5 @@
 CREATE TABLE courses (
+	course_serial_id SERIAL PRIMARY KEY,
 	university VARCHAR,
 	campus VARCHAR,
 	campus_id VARCHAR,
@@ -13,6 +14,7 @@ CREATE TABLE courses (
 );
 
 CREATE TABLE textbooks (
+	textbook_id SERIAL PRIMARY KEY,
 	campus_id VARCHAR,
 	term_id VARCHAR,
 	department_id VARCHAR,
