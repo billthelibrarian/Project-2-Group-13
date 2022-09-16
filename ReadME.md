@@ -69,8 +69,9 @@
    2. On the lower-right side of the page you'll see button for file `BNCollegeCourses_2022-02-05.csv`(99.28 MB)
    3. Below it is another button for file `BNTextbook_2022-02-05.csv`(284.41 MB)
    4. You can toggle between those to preview the files
-   5. Clicking on the download icon will download them to your harddrive *likely to your downoad folder*
-   6. Make note of the ***relative file path*** from the local repo folder to the location you've stored the downloaded files 
+   5. If you don't have one already, you may need to create a *free account*
+   6. Clicking on the download icon will download them to your harddrive *likely to your downoad folder*
+   7. Make note of the ***relative file path*** from the local repo folder to the location you've stored the downloaded files 
 
 #### Task 3. Use/Edit/Explore Our Pandas Code to adjust the original to your own liking
    1. From the previous Task list run through Tasks 1 - 4 for opening a jupyter notebook in PythonData38 environment
