@@ -40,7 +40,7 @@
 
 #### Task 9. Open a query and run our schema code
    1. Open the query tool
-   2. With a new query open, use the folder tab to navigate to the local repo you created in step 1
+   2. With a new query open, use the folder tab to navigate to the local repo you created in Task 1
    3. Select the `populate_sql` file and run it in its entirety
 
 #### Task 10. Populate the tables
@@ -55,56 +55,6 @@
    the ***courses table*** and `course_textbooks.csv` into the ***course_textbooks table***
     
 #### Task 11. Enjoy working with the data
----
-
-### *OPTIONAL* & *Not Recommended*
-## RULE 1: Do ***NOT*** Push Anything you do to the github origin main
-# RULE 2: Do ***NOT*** Push Anything you do to the github origin main
-
-#### Task 1. Start Over From the Raw Data
-   1. In the local repo you created in Task 1 of the previous list open jupyter notebook `Spring2022.ipynb`
- 
-#### Task 2. Download the Original Raw Data *internet access req'd*
-   1. You can to to [this website](https://www.kaggle.com/datasets/polartech/us-college-textbooks-and-courses-dataset) for a preview and access the original files
-   2. On the lower-right side of the page you'll see button for file `BNCollegeCourses_2022-02-05.csv`(99.28 MB)
-   3. Below it is another button for file `BNTextbook_2022-02-05.csv`(284.41 MB)
-   4. You can toggle between those to preview the files
-   5. If you don't have one already, you may need to create a *free account*
-   6. Clicking on the download icon will download them to your harddrive *likely to your downoad folder*
-   7. Make note of the ***relative file path*** from the local repo folder to the location you've stored the downloaded files 
-
-#### Task 3. Use/Edit/Explore Our Pandas Code to adjust the original to your own liking
-   1. From the previous Task list run through Tasks 1 - 4 for opening a jupyter notebook in PythonData38 environment
-   2. Open notebook `Spring2022.ipynb`
-   3. Note ***CEll X*** passes relative filepaths into variables `filepath1` and `filepath2`
-   4. **---you will carefully edit this code---**
-   5. Edit filepath1 to "<your/unique/filepath/`BNCollegeCourses_2022-02-05.csv`"
-   6. Edit filepath2 to "<your/unique/filepath/`BNTextbook_2022-02-05.csv`"
-   7. Now you can run this code also
-   8. Now you can edit or change this code also
-   9. Now you can uniquely call or modify this code however you want
-   
-#### Task 4. ***IMPORTANT-Dangerzone***
-   1. When you do run this code, it *will* Overwrite the clean csv files we've provided you in the local repo you've created
-   2. If you've over written, and you do not like the results, you can delete the csv files, and pull the files we've provided back into your local repo using git pull
-   3. Remember Rule 1 & Rule 2
-
-#### Task 5. Noteworthy Advice
-   1. In the `populate.sql` in Step 9 of the previous task list the table creation code is specific to column headers we created for you
-   2. If you've made changes to the columns, even the spelling of the columns, you *will not be able to import* the overwritten csv files you created to PostgreSQL
-   3. If you **want** those changes, and you want the populate and import steps to work, continue to step 4
-   4. Examine your unique csv files *you will have to modify* `populate.sql` to **match *your* modifications**
-   5. Line for line in each create table section indented are header names and types
-   6. **All of them** need to match each create table for needs to match each table header list you've created
-   7. Remember Rule 1 & Rule 2
-   
-#### Task 6. Further Advice
-   1. If the unique changes you made to the header columns **also impact** the course_textbook table list;
-   2. You will have to similarly modify the create table course-textbook section of Sql code too
-   3. *For Example:* If you decided to not include `price` the code in `merge_table.ipynb` will need to be changed **match *your* modifications**
-   4. And the code in `populate.sql` create table course_textbook the code for the price column will need to be removed
-   5. Remember Rule 1 & Rule 2
-   6. Also, we did warn you this was ***not recommended***
 ---
 
 ### Tools and Supplies:
