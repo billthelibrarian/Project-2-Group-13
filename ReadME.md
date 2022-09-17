@@ -24,54 +24,57 @@
 #### Task 4. Open a web based interactive computing platform
    1. In your gitbash *or terminal* open a jupyter notebook
 
-#### Task 5. Open a notebook and run code to merge two tables
-   1. Navigate to and open file `SPRING22222222222.ipynb` and run each cell in order starting from the first cell at the top
-
-#### Task 6. Refresh for the next user
-   1. **Restart and clear** the cells before you close the notebook *its just good manners*
-   2. Now you can close it
-
-#### Task 7. Open PostgreSQL software
+#### Task 5. Open PostgreSQL software
    1. Navigate to your PostgreSQL program, *wait an eternity for it to load*, and log in with your unique password
-
-#### Task 8. Create a new database to populate with college and textbook book data
+   
+#### Task 6. Create a new database to populate with college and textbook book data
    1. In the navigaton browser on the left, right-click databases
    2. Create a new database named `library_db`
 
-#### Task 9. Open a query and run our schema code
+#### Task 7. Open a query and run our schema code
    1. Open the query tool
    2. With a new query open, use the folder tab to navigate to the local repo you created in Task 1
    3. Select the `populate_sql` file and run it in its entirety
+   
+#### Task 8. Return to jupyter notebook
+   1. Navigate to and open file `transform.ipynb` and run each cell in order starting from the first cell at the top
 
-#### Task 10. Populate the tables
-   1. Populate the course_textbooks data table as follows:
-   2. Return your attention to the left hand file tree browser and navigate to the `library_db` you created
-   3. Inside that database under Schemas/public/tables - you may need to *refresh* to see the table
-   4. Right click the course_textbooks table and navigate to the import/export tool and in the pop up select **IMPORT**
-   5. You must navigate to the Resources folder inside the repo you cloned and select the `course_textbooks.csv` file
-   6. Toggle the header button to active
-   7. Choose comma as the delimiter
-   8. .................
+#### Task 9. Refresh for the next user
+   1. **Restart and clear** the cells before you close the notebook *its just good manners*
+   2. Now you can close it
+
+#### Task 10. Return to PostgreSQL software
+   1. Navigate back to your PostgreSQL program
     
 #### Task 11. Enjoy working with the data
+   1. try using "select * from course_textbooks;" to start 
 ---
 
 ### Tools and Supplies:
 * csv data tables
-* Python, Pandas, jupyter notebook, PostgreSQL 
+* Python, Pandas, jupyter notebook, PostgreSQL, SqlAlchemy
 ---
 
 ### Guide to Repo Contents:
 
-* `library_cleaning.ipynb` is a jupyter notebook that uses pandas to remove manipulate the dataframes to make the content format universal
-* `Spring2022.ipynb` is a jupyter notebook that uses pandas to clean and transform raw data from large csv files 
+* `Partition_CSVs.ipynb` is a jupyter notebook that uses pandas to extract jumbo sized files and slice them into smaller partitions
+* `transform.ipynb` is a jupyter notebook that uses pandas to clean and transform raw data as well as load it in PostgreSQL
 * `populate.sql` is a sql code file that you will need to access to populate the data tables in PostgreSQL
 * `ReadME.md` is the read only file you're currently viewing which contains the instruction manual for this data
 * `technical_report.ipynb` is the read only jupyter notebook with the technical descriptiion explaining what was done to the raw data to deliver a cleaner and more easily usable product to analysts as well as consumers
 
 * In folder, `Resources` are the following files:
-    1. `courses.csv` is the cleaned and transformed data for courses
-    2. `textbooks.csv` is the cleaned and transformed data for textbooks
+    1. `courses_1.csv` is partition 1 of 3 raw data from `BNCollegeCourses_2022-02-05.csv`
+    2. `courses_2.csv` is partition 2 of 3 raw data from `BNCollegeCourses_2022-02-05.csv`
+    3. `courses_3.csv` is partition 3 of 3 raw data from `BNCollegeCourses_2022-02-05.csv`
+    4. `textbooks_1.csv` is partition 1 of 5 raw data from `BNTextbook_2022-02-05.csv`
+    5. `textbooks_2.csv` is partition 2 of 5 raw data from `BNTextbook_2022-02-05.csv`
+    6. `textbooks_3.csv` is partition 3 of 5 raw data from `BNTextbook_2022-02-05.csv`
+    7. `textbooks_4.csv` is partition 4 of 5 raw data from `BNTextbook_2022-02-05.csv`
+    8. `textbooks_5.csv` is partition 5 of 5 raw data from `BNTextbook_2022-02-05.csv`
+    * Complete `BNCollegeCourses_2022-02-05.csv` is filesize (99.28 MB)
+    * Complete `BNTextbook_2022-02-05.csv` is filesize (284.41 MB)
+    * They can be found at [this website](https://www.kaggle.com/datasets/polartech/us-college-textbooks-and-courses-dataset)
 ---
 
 
