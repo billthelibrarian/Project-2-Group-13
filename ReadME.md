@@ -16,7 +16,8 @@
 
 #### Task 2. Open a navigation terminal
    1. Open a gitbash from the local repo if you are on a PC
-   2. Open a terminal from the local repo if you are on a mac
+   - *--OR--*
+   1. Open a terminal from the local repo if you are on a mac
 
 #### Task 3. Activate a python environment
    1. Activate PythonData38 environment in your terminal *or gitbash* window
@@ -29,16 +30,16 @@
    1. Navigate to your PGAdmin-PostgreSQL program, *wait an eternity for it to load*, and log in with your unique password
    
 #### Task 6. Create a new database to populate with college and textbook book data
-   1. In the navigation browser on the left, right-click databases
-   2. Create a new database named `library_db`
+   1. Create a new database named `library_db`
 
 #### Task 7. Open a query and run our schema code
-   1. Open the query tool
+   1. Open the Query tool
    2. With a new query open, click the folder icon and navigate to the local repo that you created in Task 1
    3. Select the `populate_sql` file and run it in its entirety
    4. Note the output in the window shows "setting" with object type "text"
    5. This is your port number and you will need it for Task 8
-   5. ***Remember this 4 digit number*** you can write it down somewhere if that helps
+   6. ***Remember this 4 digit number*** you can write it down somewhere if that helps
+   7. Close the Query tool
    
 #### Task 8. Return to jupyter notebook
    1. Navigate to and open file `config.py`
@@ -60,12 +61,15 @@
    5. File/Save the changes
    6. *Neglecting to save this file could leave your personal security exposed*
    7. Now you can close the `config.py` tab
+   8. You can also close the jupyter notebook
+   9. You can also exit out of your terminal *or gitbash*
    
 #### Task 10. Return to PostgreSQL software
    1. Navigate back to your PGAdmin-PostgreSQL program
+   2. Open a new Query tool
     
 #### Task 11. Enjoy working with the data
-   1. try using "select * from course_textbooks;" to start 
+   1. Try using "select * from course_textbooks;" to start, and narrow your queries however you want
 ---
 
 ### Tools and Supplies:
