@@ -25,7 +25,7 @@
    1. In your gitbash *or terminal* open a jupyter notebook
 
 #### Task 5. Open a notebook and run code to merge two tables
-   1. Navigate to and open file `table_merge.ipynb` and run each cell in order starting from the first cell at the top
+   1. Navigate to and open file `SPRING22222222222.ipynb` and run each cell in order starting from the first cell at the top
 
 #### Task 6. Refresh for the next user
    1. **Restart and clear** the cells before you close the notebook *its just good manners*
@@ -44,15 +44,14 @@
    3. Select the `populate_sql` file and run it in its entirety
 
 #### Task 10. Populate the tables
-   1. Populate the textbooks data table as follows:
+   1. Populate the course_textbooks data table as follows:
    2. Return your attention to the left hand file tree browser and navigate to the `library_db` you created
-   3. Inside that database under Schemas/public/tables there are three - you may need to *refresh* to see them
-   4. Right click the textbook table and navigate to the import/export tool and in the pop up select **IMPORT**
-   5. You must navigate to the Resources folder inside the repo you cloned and select the `textbooks.csv` file
+   3. Inside that database under Schemas/public/tables - you may need to *refresh* to see the table
+   4. Right click the course_textbooks table and navigate to the import/export tool and in the pop up select **IMPORT**
+   5. You must navigate to the Resources folder inside the repo you cloned and select the `course_textbooks.csv` file
    6. Toggle the header button to active
    7. Choose comma as the delimiter
-   8. **Repeat** the previous seven items of Task # 10 exactly, sequentially, and *substituing only* `courses.csv` into 
-   the ***courses table*** and `course_textbooks.csv` into the ***course_textbooks table***
+   8. .................
     
 #### Task 11. Enjoy working with the data
 ---
