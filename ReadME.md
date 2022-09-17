@@ -23,13 +23,13 @@
 
 #### Task 4. Open a web based interactive computing platform
    1. In your gitbash *or terminal* open a jupyter notebook
-   2. Don't navigat anywhere yet, simply go on to Task 5, leaving this open in the background
+   2. Don't navigate anywhere yet, simply go on to Task 5, leaving this open in the background
 
 #### Task 5. Open PostgreSQL software
    1. Navigate to your PGAdmin-PostgreSQL program, *wait an eternity for it to load*, and log in with your unique password
    
 #### Task 6. Create a new database to populate with college and textbook book data
-   1. In the navigaton browser on the left, right-click databases
+   1. In the navigation browser on the left, right-click databases
    2. Create a new database named `library_db`
 
 #### Task 7. Open a query and run our schema code
@@ -44,7 +44,7 @@
    1. Navigate to and open file `config.py`
    2. Between the red quotations type in your Postgres password, replacing <--YOUR PASSWORD-->
    3. Between the red quotations type in your port number from Task 7, replacing <--YOUR PORT NUMBER-->
-   4. File/Save you unique values
+   4. File/Save your unique values
    5. *Neglecting to save this file will create an error in the next file*
    6. Do not close this tab yet
 
@@ -52,7 +52,7 @@
    1. Navigate to and open file `transform.ipynb` and run each cell in order starting from the first cell at the top
 
 #### Task 9. Refresh& Restore for the next user
-   1. **Restart and clear** the cells before you close the notebook because *its just good manners*
+   1. **Restart and clear** the cells before you close the notebook because *it's just good manners*
    2. Now you can close the `transform.py` tab
    2. Return to the config.py tab
    3. Remove your password, restoring <--YOUR PASSWORD--> between the red quotations
@@ -80,7 +80,7 @@
 * `transform.ipynb` is a jupyter notebook that uses pandas to clean and transform raw data as well as load it in PostgreSQL
 * `populate.sql` is a sql code file that you will need to access to populate the data tables in PostgreSQL
 * `ReadME.md` is the read only file you're currently viewing which contains the instruction manual for this data
-* `technical_report.ipynb` is the read only jupyter notebook with the technical descriptiion explaining what was done to the raw data to deliver a cleaner and more easily usable product to analysts as well as consumers
+* `technical_report.ipynb` is the read only jupyter notebook with the technical description explaining what was done to the raw data to deliver a cleaner and more easily usable product to analysts as well as consumers
 
 * In folder, `Resources` are the following files:
     1. `courses_1.csv` is partition 1 of 3 raw data from `BNCollegeCourses_2022-02-05.csv`
@@ -99,4 +99,4 @@
 
 ### Credits and Special Thanks
 
-* Dominic Labella for helping clarify how we could most effectively connect the two tables and advising us on the pros and cons between building a junction table in sql and creating a new table with a pd.merge function in pandas - in this case we opted to use the merge
+* Dominic LaBella and Nick Buller for helping clarify how we could most effectively connect the two tables and advising us on the pros and cons between building a junction table in sql and creating a new table with a pd.merge function in pandas - in this case we opted to use the merge.
