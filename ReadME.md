@@ -33,14 +33,14 @@
 
 #### Task 7. Open a query and run our schema code
    1. Open the query tool
-   2. With a new query open, use the folder tab to navigate to the local repo you created in Task 1
+   2. With a new query open, click the folder icon and navigate to the local repo that you created in Task 1
    3. Select the `populate_sql` file and run it in its entirety
    
 #### Task 8. Return to jupyter notebook
    1. Navigate to and open file `transform.ipynb` and run each cell in order starting from the first cell at the top
 
 #### Task 9. Refresh for the next user
-   1. **Restart and clear** the cells before you close the notebook *its just good manners*
+   1. **Restart and clear** the cells before you close the notebook because *its just good manners*
    2. Now you can close it
 
 #### Task 10. Return to PostgreSQL software
