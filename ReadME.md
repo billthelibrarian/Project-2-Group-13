@@ -35,8 +35,17 @@
    1. Open the query tool
    2. With a new query open, click the folder icon and navigate to the local repo that you created in Task 1
    3. Select the `populate_sql` file and run it in its entirety
-   
-#### Task 8. Return to jupyter notebook
+  
+#### Task 8. Locate and Make Note of Port Number
+   1. 
+   2. 
+
+#### Task 8. Return to jupyter notebook and store
+   1. Navigate to and open file `config.py`
+   2. Recall your port number from Task 8, and enter it between the quotations replacing < YOUR PORT NUMBER >
+   3. Recall your password, and enter it between the quotations replacing < YOUR PASSWORD >
+      
+####   
    1. Navigate to and open file `transform.ipynb` and run each cell in order starting from the first cell at the top
 
 #### Task 9. Refresh for the next user
